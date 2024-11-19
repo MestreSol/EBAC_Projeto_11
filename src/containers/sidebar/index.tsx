@@ -6,7 +6,7 @@ const Sidebar: React.FC = () => {
   return (
     <AvatarArea>
         <Avatar userName="MestreSol"/>
-        <Titulo>Mestre Sol</Titulo>
+        <Titulo position="center">Mestre Sol</Titulo>
     </AvatarArea>
   )
 }

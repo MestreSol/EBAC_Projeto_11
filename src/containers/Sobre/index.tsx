@@ -5,7 +5,7 @@ const Sobre = () => {
     return (
         <section>
             <SectionTitle>
-                <Titulo>Sobre</Titulo>
+                <Titulo position="left">Sobre</Titulo>
             </SectionTitle>
         <Paragraph>
         It is an honor to have you view my profile. Im João, Fullstack developer and Computer Engineer from Campinas, São Paulo. Im passionate about creating solutions that make technology accessible and effective for everyone
@@ -17,8 +17,8 @@ const Sobre = () => {
 const Paragraph = styled.p`
     font-size: 1rem;
     color: #c7696c;
-    margin: 0;
     margin-top: 10px;
+    margin-bottom: 10px;
     padding: 0;
     text-align: justify;
     font-family: "Iceberg", sans-serif;

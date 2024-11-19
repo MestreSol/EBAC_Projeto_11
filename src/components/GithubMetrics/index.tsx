@@ -8,7 +8,7 @@ type Props = {
 
 const Titulo = ({ trophy = false, gitHubStatus = false, gitHubStreak = false }: Props) => {
     return (
-        <Title>
+        <>
             <CardArea>
             {trophy &&
                     <CardImage src="https://github-profile-trophy.vercel.app/?username=MestreSol&theme=onedark" alt="trophy" />
@@ -22,7 +22,7 @@ const Titulo = ({ trophy = false, gitHubStatus = false, gitHubStreak = false }: 
                     <CardImageSplit src="https://github-readme-streak-stats.herokuapp.com/?user=MestreSol&theme=dracula&hide_border=true" alt="github streak" />
                 }
                 </CardArea>
-        </Title>
+        </>
     );
 };
 
