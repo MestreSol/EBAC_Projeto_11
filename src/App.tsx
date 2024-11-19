@@ -1,24 +1,23 @@
-import logo from './logo.svg'
 import './App.css'
+import Sidebar from './containers/sidebar'
+import Sobre from './containers/Sobre'
+import Projetos from './containers/Projetos'
+import GlobalStyle, { Container } from './styles'
+import GithubMetrics from './components/GithubMetrics'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <GlobalStyle />
+    <Container>
+      <Sidebar></Sidebar>
+      <main>
+        <Sobre></Sobre>
+        <GithubMetrics trophy={true} gitHubStatus={true} gitHubStreak={true}></GithubMetrics>
+        <Projetos></Projetos>
+      </main>
+    </Container>
+    </>
   )
 }
 
