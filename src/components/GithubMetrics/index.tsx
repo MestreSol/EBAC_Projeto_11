@@ -10,17 +10,16 @@ const Titulo = ({ trophy = false, gitHubStatus = false, gitHubStreak = false }: 
     return (
         <Title>
             <CardArea>
-
             {trophy &&
-                    <img src="https://github-profile-trophy.vercel.app/?username=MestreSol&theme=onedark" alt="trophy" />
+                    <CardImage src="https://github-profile-trophy.vercel.app/?username=MestreSol&theme=onedark" alt="trophy" />
                 }
             </CardArea>
             <CardArea>
             {gitHubStatus &&
-                    <img src="https://github-readme-stats.vercel.app/api?username=MestreSol&show_icons=true&theme=onedark" alt="github status" />
+                    <CardImageSplit src="https://github-readme-stats.vercel.app/api?username=MestreSol&show_icons=true&theme=onedark" alt="github status" />
                 }
             {gitHubStreak &&
-                    <img src="https://github-readme-streak-stats.herokuapp.com/?user=MestreSol&theme=dracula&hide_border=true" alt="github streak" />
+                    <CardImageSplit src="https://github-readme-streak-stats.herokuapp.com/?user=MestreSol&theme=dracula&hide_border=true" alt="github streak" />
                 }
                 </CardArea>
         </Title>
@@ -31,8 +30,16 @@ const CardArea = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px;
+    max-width: 50vw;
+    height: auto;
+`;
+
+const CardImage = styled.img`
     width: 100%;
+    height: auto;
+`;
+const CardImageSplit = styled.img`
+    width: 50%;
     height: auto;
 `;
 const Title = styled.h1`
@@ -44,5 +51,6 @@ const Title = styled.h1`
     text-align: center;
     font-family: "Iceberg", sans-serif;
 `;
+
 
 export default Titulo;

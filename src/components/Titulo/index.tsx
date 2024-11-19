@@ -14,9 +14,9 @@ type Props ={
 
 const Title = styled.h1`
     font-size: 1.5rem;
-    color: #21130d;
+    color: #cbb173;
     margin: 0;
-    margin-top: 10px;
+    margin-top: 20px;
     padding: 0;
     text-align: center;
     font-family: "Iceberg", sans-serif;

@@ -16,7 +16,7 @@ const Sobre = () => {
 
 const Paragraph = styled.p`
     font-size: 1rem;
-    color: #21130d;
+    color: #c7696c;
     margin: 0;
     margin-top: 10px;
     padding: 0;
@@ -26,9 +26,9 @@ const Paragraph = styled.p`
 
 const SectionTitle = styled.div`
     font-size: 1.5rem;
-    color: #21130d;
+    color: #c7696c;
     margin: 0;
-    margin-top: 10px;
+    margin-top: 50px;
     padding: 0;
     text-align: left;
     font-family: "Iceberg", sans-serif;
